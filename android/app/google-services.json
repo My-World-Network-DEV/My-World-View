@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "341156357073",
+    "project_id": "mwn-my-world-view",
+    "storage_bucket": "mwn-my-world-view.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341156357073:android:dfc26afe72dd713c74b6f0",
+        "android_client_info": {
+          "package_name": "MWN.MyWorldView"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZOnrDZ9UKptQxXOkmVvH3zgoiej5OCKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

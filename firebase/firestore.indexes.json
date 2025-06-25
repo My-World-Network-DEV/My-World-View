@@ -1,0 +1,18 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "Topic",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "topicTitle",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "topicCategoriesList",
+          "arrayConfig": "CONTAINS"
+        }
+      ]
+    }
+  ]
+}

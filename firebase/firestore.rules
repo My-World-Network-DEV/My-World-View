@@ -1,0 +1,116 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /Topic/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /Category/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /Issue/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /Topic/{parent}/Topic_User_Interaction/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/Topic_User_Interaction/{document} {
+      allow read: if true;
+    }
+
+
+    match /Topic/{parent}/Topic_Created_Data/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/Topic_Created_Data/{document} {
+      allow read: if true;
+    }
+
+
+    match /Topic/{parent}/Topic_Edited_Data/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/Topic_Edited_Data/{document} {
+      allow read: if true;
+    }
+
+
+    match /Topic/{parent}/Topic_Deleted_Data/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/Topic_Deleted_Data/{document} {
+      allow read: if true;
+    }
+
+
+    match /Topic/{parent}/Topic_Description/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/Topic_Description/{document} {
+      allow read: if true;
+    }
+
+
+    match /Topic/{parent}/Topic_Categories/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/Topic_Categories/{document} {
+      allow read: if true;
+    }
+
+
+    match /Topic/{parent}/Topic_Trending/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/Topic_Trending/{document} {
+      allow read: if true;
+    }
+
+  }
+}
